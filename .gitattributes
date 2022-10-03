@@ -1,2 +1,21 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+
+public class HomeTask2 {
+    public static void main(String[] args) {
+
+        //имя достопримечательности
+        String name = "Monument to Catherine II";
+        System.out.println(name);
+
+        //координаты достопримечательности
+
+        float x = 46.48733636058962f;
+        float y = 30.739289178672394f;
+        System.out.println(x);
+        System.out.println(y);
+
+
+    }
+}
