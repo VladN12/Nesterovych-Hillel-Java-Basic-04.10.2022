@@ -17,8 +17,5 @@ public class HomeTask2 {
         System.out.println(y);
 
 
-        //new words
-
-
     }
 }
