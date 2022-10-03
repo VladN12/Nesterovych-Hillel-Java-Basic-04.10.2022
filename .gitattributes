@@ -16,6 +16,8 @@ public class HomeTask2 {
         System.out.println(x);
         System.out.println(y);
 
+       //hometask 3
+
 
     }
 }
