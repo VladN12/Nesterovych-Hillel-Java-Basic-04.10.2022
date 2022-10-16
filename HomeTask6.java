@@ -32,7 +32,7 @@ public class HomeTask6 {
         else
             System.out.println("Победила команда " + team2 + " набравшая " + averageNumbersOfKillsCT + " очков");
 
-//просто комент 
+//не сильно красивый код ( длиный ) но работает xD
 
 
     }
