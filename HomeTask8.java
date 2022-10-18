@@ -18,8 +18,8 @@ public class HomeTask8 {
         }
 
         double sum1 = 0;
-        for (int x : team1) {
-            sum1 += x;
+        for (int x = 0 ;x<team1.length; x++) {
+            sum1 += team1[x];
         }
         System.out.println("Средний возраст команды номер 1 = : " + sum1 / team1.length);
         System.out.println("---------------------------------------------");
@@ -40,8 +40,8 @@ public class HomeTask8 {
 
         }
         double sum2 = 0;
-        for (int z : team2) {
-            sum2 += z;
+        for (int z=0; z<team2.length;z++) {
+            sum2 += team1[z];
         }
         System.out.println("Средний возраст команды номер 2 = : " + sum2 / team1.length);
         System.out.println("---------------------------------------------");
