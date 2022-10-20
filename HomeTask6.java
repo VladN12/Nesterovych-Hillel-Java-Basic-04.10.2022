@@ -12,9 +12,7 @@ public class HomeTask6 {
         int fourthPlayerT = 12;
         int fifthPlayerT = 25;
 
-
         double averageNumbersOfKillsT = (firstPlayerT + secondPlayerT + thirdPlayerT + fourthPlayerT + fifthPlayerT) / 5;
-
 
         String team2 = "Counter-Terrorist";
         int firstPlayerCT = 11;
@@ -25,16 +23,18 @@ public class HomeTask6 {
 
         double averageNumbersOfKillsCT = (firstPlayerCT + secondPlayerCT + thirdPlayerCT + fourthPlayerCT + fifthPlayerCT) / 5;
 
-        if (averageNumbersOfKillsT > averageNumbersOfKillsCT)
+        if (averageNumbersOfKillsT > averageNumbersOfKillsCT) {
             System.out.println("Победила команда " + team1 + " набравшая " + averageNumbersOfKillsT + " очков");
 
+        }
 
-        else
+        else if (averageNumbersOfKillsCT == averageNumbersOfKillsT) {
+            System.out.println(" Ничья ! ");
+        } else {
             System.out.println("Победила команда " + team2 + " набравшая " + averageNumbersOfKillsCT + " очков");
 
-//не сильно красивый код ( длиный ) но работает xD
 
+        }
 
     }
-
 }
