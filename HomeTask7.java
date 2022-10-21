@@ -2,25 +2,26 @@ public class HomeTask7 {
 
     public static void main(String[] args) {
 
-
         first:
-        for (int x = 0; x < 101; x++) {
-            {
-                if (x == 4 ) {
-                    System.out.println("Skip unlucky number ! ");
-                    continue first;
-                }
-                else if (x==9){
-                    System.out.println("Skip unlucky number !");
-                    continue first;
-                }
-                System.out.println("Номер Шатла"+" : "+x);
+        for (int x = 0; x < 13; x++) {
+
+            if (x == 4 || x == 9) {
+                continue first;
             }
 
+            second:
+            for (int y = 0; y < 11; y++) {
+                if (y == 4 || y == 9) {
+                    continue second;
+                }
 
+
+                System.out.println("Номер Шатла" + " : " + x + y);
+            }
 
 
         }
         System.out.println("----------------------------------------------------------------");
     }
+
 }
