@@ -2,26 +2,30 @@ public class HomeTask7 {
 
     public static void main(String[] args) {
 
-        first:
-        for (int x = 1; x < 14; x++) {
 
-            if (x == 4 || x == 9) {
-                continue first;
+        int numberOfShuttles = 1;
+        for (int x = 1; x < 10; x++) {
+            if (numberOfShuttles > 100) {
+                break;
             }
-
-            second:
-            for (int y = 0; y < 11; y++) {
-                if (y == 4 || y == 9) {
-                    continue second;
+            if (x != 4 & x != 9) {
+                for (int y = 0; y < 10; y++) {
+                    if (numberOfShuttles > 100) {
+                        break;
+                    }
+                    if (y != 4 & y != 9) {
+                        for (int r = 0; r < 10; r++) {
+                            if (r != 4 & r != 9) {
+                                System.out.println("Шатл " + numberOfShuttles + " имеет № " + x + y + r);
+                                numberOfShuttles++;
+                                if (numberOfShuttles > 100) {
+                                    break;
+                                }
+                            }
+                        }
+                    }
                 }
-
-
-                System.out.println("Номер Шатла" + " : " + x + y);
             }
-
-
         }
-        System.out.println("----------------------------------------------------------------");
     }
-
 }
