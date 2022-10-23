@@ -3,7 +3,7 @@ public class HomeTask7 {
     public static void main(String[] args) {
 
         first:
-        for (int x = 0; x < 13; x++) {
+        for (int x = 1; x < 14; x++) {
 
             if (x == 4 || x == 9) {
                 continue first;
