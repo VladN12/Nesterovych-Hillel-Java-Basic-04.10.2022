@@ -6,21 +6,21 @@ public class HomeTask12 {
         person1.LastName = "Smith";
         person1.City = "NewYork";
         person1.PhoneNumber = "2936729462846";
-        person1.Print();
+        person1.print();
 
         Person person2 = new Person();
         person2.Name = "Jackie";
         person2.LastName = "Chan";
         person2.City = "Shanghai";
         person2.PhoneNumber = "12312412412";
-        person2.Print();
+        person2.print();
 
         Person person3 = new Person();
         person3.Name = "Sherlock";
         person3.LastName = "Holmes";
         person3.City = "London";
         person3.PhoneNumber = "37742123513";
-        person3.Print();
+        person3.print();
     }
 
 
@@ -32,7 +32,7 @@ class Person {
     String City;
     String PhoneNumber;
 
-    void Print() {
+    void print() {
         System.out.println("Позвонить гражданину " + Name + " " + LastName + "из города " + City + "можно по номеру " + PhoneNumber);
     }
 
