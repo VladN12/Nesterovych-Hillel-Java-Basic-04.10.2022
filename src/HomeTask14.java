@@ -1,7 +1,7 @@
 public class HomeTask14 {
     public static void main(String[] args) {
         AccountInfo Info = new AccountInfo("Влад", 1960, "ajajasd@gmail.com", "+3837123123937", "Нестерович", "105", "120/80", 20);
-        AccountInfo Info1 = new AccountInfo("Кирил", 198, "ajasdsaj@gmail.com", "+3837123123937", "Петрович", "105", "120/80", 2220);
+        AccountInfo Info1 = new AccountInfo("Кирил", 1980, "ajasdsaj@gmail.com", "+3837123123937", "Петрович", "105", "120/80", 2220);
         AccountInfo Info2 = new AccountInfo("Саша", 1970, "aasdsafgmail.com", "+38379123437", "Нестерович", "105", "120/80", 210);
         AccountInfo Info3 = new AccountInfo("Дима", 1968, "aaaaa@gmail.com", "+383712937", "Нестерович", "105", "120/59", 220);
         AccountInfo Info4 = new AccountInfo("Назар", 1985, "ajaafsasfj@gmail.com", "+3837123123937", "Нестерович", "105", "120/90", 15);
@@ -12,21 +12,53 @@ public class HomeTask14 {
         Info3.printAccountInfo();
         Info4.printAccountInfo();
 
+        System.out.println("----------------------------------------------------------------------------------------------------");
+        System.out.println("Изменяем данные с помощью сетеров");
+
+        Info.setLastName("Вазовский");
+        Info.setWeight("100");
+        Info.setPressure("120/50");
+        Info.setAmountOfSteps(800);
+        Info.printAccountInfo();
+
+        Info1.setLastName("Болгар");
+        Info1.setWeight("80");
+        Info1.setPressure("140/50");
+        Info1.setAmountOfSteps(1800);
+        Info1.printAccountInfo();
+
+        Info2.setLastName("Левицкий");
+        Info2.setWeight("120");
+        Info2.setPressure("170/80");
+        Info2.setAmountOfSteps(500);
+        Info2.printAccountInfo();
+
+        Info3.setLastName("Карл");
+        Info3.setWeight("120");
+        Info3.setPressure("100/50");
+        Info3.setAmountOfSteps(7800);
+        Info3.printAccountInfo();
+
+        Info4.setLastName("Киркоров");
+        Info4.setWeight("220");
+        Info4.setPressure("180/90");
+        Info4.setAmountOfSteps(2800);
+        Info4.printAccountInfo();
 
 
     }
 }
 
 class AccountInfo {
-    private  String name;
-    private  int yearOfBirthday;
-    private  String email;
-    private  String phoneNumber;
+    private final int age = 2022;
+    private String name;
+    private int yearOfBirthday;
+    private String email;
+    private String phoneNumber;
     private String lastName;
     private String weight;
     private String pressure;
     private int amountOfSteps;
-    private final int age = 2022;
 
 
     public AccountInfo(String name, int yearOfBirthday, String email, String phoneNumber, String lastName, String weight, String pressure, int amountOfSteps) {
@@ -57,19 +89,19 @@ class AccountInfo {
         return phoneNumber;
     }
 
-    private void setLastName(String lastName) {
+    void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    private void setWeight(String weight) {
+    public void setWeight(String weight) {
         this.weight = weight;
     }
 
-    private void setPressure(String pressure) {
+    public void setPressure(String pressure) {
         this.pressure = pressure;
     }
 
-    private void setAmountOfSteps(int amountOfSteps) {
+    public void setAmountOfSteps(int amountOfSteps) {
         this.amountOfSteps = amountOfSteps;
     }
 
