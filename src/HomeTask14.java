@@ -1,7 +1,17 @@
 public class HomeTask14 {
     public static void main(String[] args) {
-        AccountInfo Info = new AccountInfo("Влад", 1960, "ajaj@gmail.com", "+3837937", "Нестерович", "105", "120/80", 20);
+        AccountInfo Info = new AccountInfo("Влад", 1960, "ajajasd@gmail.com", "+3837123123937", "Нестерович", "105", "120/80", 20);
+        AccountInfo Info1 = new AccountInfo("Кирил", 198, "ajasdsaj@gmail.com", "+3837123123937", "Петрович", "105", "120/80", 2220);
+        AccountInfo Info2 = new AccountInfo("Саша", 1970, "aasdsafgmail.com", "+38379123437", "Нестерович", "105", "120/80", 210);
+        AccountInfo Info3 = new AccountInfo("Дима", 1968, "aaaaa@gmail.com", "+383712937", "Нестерович", "105", "120/59", 220);
+        AccountInfo Info4 = new AccountInfo("Назар", 1985, "ajaafsasfj@gmail.com", "+3837123123937", "Нестерович", "105", "120/90", 15);
+
         Info.printAccountInfo();
+        Info1.printAccountInfo();
+        Info2.printAccountInfo();
+        Info3.printAccountInfo();
+        Info4.printAccountInfo();
+
 
 
     }
