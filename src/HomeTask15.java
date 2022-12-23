@@ -74,7 +74,7 @@ class PriceCounter {
                         System.out.println("Incorrect order");
                 }
             }
-            while (stop.equals("Yes"));
+            while (!stop.equals("No"));
             System.out.println("Total Price for your order : " + totalPrice);
         }
 
