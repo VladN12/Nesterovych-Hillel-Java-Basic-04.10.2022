@@ -33,42 +33,43 @@ class PriceCounter {
 
                 menu = scanner.nextLine();
 
+
                 switch (menu) {
                     case "COFFEE":
                         totalPrice += PriceCounter.COFFEE_CONSTANT;
                         System.out.println(DrinksMachine.COFFEE + " - Price - " + PriceCounter.COFFEE_CONSTANT);
                         System.out.println("Anything else ? - Yes/No");
-                        stop = scanner.next();
+                        stop = scanner.nextLine();
                         break;
                     case "TEA":
                         totalPrice += PriceCounter.TEA_CONSTANT;
                         System.out.println(DrinksMachine.TEA + " - Price - " + PriceCounter.TEA_CONSTANT);
                         System.out.println("Anything else ? - Yes/No");
-                        stop = scanner.next();
+                        stop = scanner.nextLine();
                         break;
                     case "LEMONADE":
                         totalPrice += PriceCounter.LEMONADE_CONSTANT;
                         System.out.println(DrinksMachine.LEMONADE + " - Price - " + PriceCounter.LEMONADE_CONSTANT);
                         System.out.println("Anything else ? - Yes/No");
-                        stop = scanner.next();
+                        stop = scanner.nextLine();
                         break;
                     case "MOJITO":
                         totalPrice += PriceCounter.MOJITO_CONSTANT;
                         System.out.println(DrinksMachine.MOJITO + " - Price - " + PriceCounter.MOJITO_CONSTANT);
                         System.out.println("Anything else ? - Yes/No");
-                        stop = scanner.next();
+                        stop = scanner.nextLine();
                         break;
                     case "MINERAL_WATER":
                         totalPrice += PriceCounter.MINERAL_CONSTANT;
                         System.out.println(DrinksMachine.MINERAL_WATER + " - Price - " + PriceCounter.MINERAL_CONSTANT);
                         System.out.println("Anything else ? - Yes/No");
-                        stop = scanner.next();
+                        stop = scanner.nextLine();
                         break;
                     case "COCA_COLA" :
                         totalPrice += PriceCounter.COCA_COLA_CONSTANT;
                         System.out.println(DrinksMachine.COCA_COLA + " - Price - " + PriceCounter.COCA_COLA_CONSTANT);
                         System.out.println("Anything else ? - Yes/No");
-                        stop = scanner.next();
+                        stop = scanner.nextLine();
                         break;
                     default:
                         System.out.println("Incorrect order");
